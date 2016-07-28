@@ -4,8 +4,8 @@ All kinds of wheels for astronomers
 
 ## post regulations
 * Each post need to have a brief title start with level 2 title "## some question"
-* we can some meta data for this posts, like tags.
-* Then submitter start a level 4 title with his or her name "#### someone" (to make the text smaller..)
+* we make a discription and add some meta data for this posts, like tags.
+* then submitter start a level 4 title with his or her name "#### someone" (to make the text smaller..)
 * and the last is your content.
 
 Here is an example post.
@@ -48,7 +48,7 @@ trash()
 }
 ```
 my trash:
-![my trash](./image/my-trash.png "my trash")
+![my trash](./images/my-trash.png "my trash")
 
 ## good use of git branch
 * tags: git, github, version control
@@ -59,7 +59,7 @@ how to manage git branches efficiently?
 
 see
 * [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
-* [gg———good use of git,一个实用的git分支模型](http://fmajor.lamost.org/blog/2014/08/08/gg.html)
+* [gg: good use of git,一个实用的git分支模型](http://fmajor.lamost.org/blog/2014/08/08/gg.html)
 * [gg](https://github.com/Fmajor/gg)
 * [gitflow](https://github.com/nvie/gitflow)
 
