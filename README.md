@@ -26,9 +26,12 @@ here is the code
 ```
 
 ## prevent neglectful rm -rf
-* tags: shell, rm 
+* tags: shell, rm
+
+how to prevent neglectful rm -rf?
+
 ## by [Fmajor](https://github.com/someone/Fmajor)
-* description: mv the things to ~/.trash/<data-time>/
+* description: mv the things to ~/.trash/\<data-time\>
 * disadvantages: you should clean your .trash using rmSure from time to time
 
 code:
@@ -42,3 +45,19 @@ trash()
     mv -f $@ $tempDir
 }
 ```
+my trash:
+![my trash](./image/my-trash.png "my trash")
+
+## good use of git branch
+* tags: git, github, version control
+
+how to manage git branches efficiently?
+
+## by [Fmajor](https://github.com/someone/Fmajor)
+
+see
+* [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
+* [gg———good use of git,一个实用的git分支模型](http://fmajor.lamost.org/blog/2014/08/08/gg.html)
+* [gg](https://github.com/Fmajor/gg)
+* [gitflow](https://github.com/nvie/gitflow)
+
