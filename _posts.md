@@ -9,7 +9,7 @@ All kinds of snippets and wheels for astronomers
     Format of tags should be "* tags: tag1, tag2..." just follow the title in the next line
 3. Then submitter start a level 4 title with his or her name "#### someone" (to make the text smaller..)
 4. And the last is your content.
-* the compile.py will auto generate the **tags.md** and the table of contents below,
+* the compile.py will auto generate the [**tags.md**](https://github.com/AstroWheel/AstroWheel/blob/master/tags.md) and the table of contents below,
     so make sure that you abide by this rules to make it work properly.
 * you should run compile.py every time you add or delete a new post. If you do not have python, your can just leave this compiling work for others.
 
