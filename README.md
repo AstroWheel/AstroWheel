@@ -1,23 +1,29 @@
 #AstroWheel
 
-All kinds of wheels for astronomers
+All kinds of snippets and wheels for astronomers
 
 ## post regulations
-* Each post need to have a brief title start with level 2 title "## some question"
-* we make a discription and add some meta data for this posts, like tags.
-* then submitter start a level 4 title with his or her name "#### someone" (to make the text smaller..)
-* and the last is your content.
+1. Each post need to have a brief title start with level 2 title "## some question"
+2. we can make a discription and add some meta data for this posts, like tags.
+    Format of tags should be "* tags: tag1, tag2..." just follow the title in the next line
+3. Then submitter start a level 4 title with his or her name "#### someone" (to make the text smaller..)
+4. And the last is your content.
+* the compile.py will auto generate the tags.md and the table of contents below,
+    so make sure that you abide by this rules to make it work properly.
+* you should run compile.py every time you add or delete a new post. If you do not have python, your can just leave this compile work for others.
 
 Here is an example post.
 
-## some problems about python
+## some problems title
+[//]: # (This is a comment(not show in the home page)
+[//]: # (you should not change the title "## some problems title", because the compile.py need it to be this)
 * tags: python, blabla, wheel
 
 #### by [someone](https://github.com/someone)
 blablabla
 blalbalba
 here is the code
-```markdown
+``` markdown
 ## some problems about python
 * tags: python, blabla, wheel
 
@@ -26,6 +32,9 @@ blablabla
 blalbalba
 here is the code
 ```
+
+## table of contents
+
 
 ## prevent neglectful rm -rf
 * tags: shell, rm
