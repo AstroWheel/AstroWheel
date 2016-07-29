@@ -11,7 +11,7 @@ try:
 except ImportError as e:
     raise Exception("you need to install mistune and lxml package!")
 
-filename = "./posts.md"
+filename = "./_posts.md"
 
 with open(filename,'r') as f:
     readme = f.read().decode("utf-8")
@@ -61,7 +61,6 @@ wholeFile = readme.split(mark[0])
 newReadmeList = tableOfContents
 newReadmeList.insert(0, "## table of contents\n")
 newReadmeList.insert(0, wholeFile[0])
-newReadmeList.append(wholeFile[1])
 newReadmeList.append(wholeFile[1])
 
 newReadme = "".join(newReadmeList)
