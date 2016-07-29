@@ -72,10 +72,11 @@ with open("README.md",'w') as f:
 tagList = list(allTags)
 N = len(tagList)
 tagList.sort()
-tagListWithUrl = ["[{}]({}#{}) ".\
+tagListWithUrl = ["[{}]({}#{})".\
                     format(eachTag, tagUrl, "-".join(eachTag.split())) \
                     for eachTag in tagList]
-tagListWithUrl.append("\n\n")
+tagListWithUrl = ", ".join(tagListWithUrl)
+tagListWithUrl += "\n\n"
 
 header="# Tags\n"
 template = "## {}\n {}\n"
@@ -83,7 +84,7 @@ allH2 = [template.format(eachTag,
                 "\n".join([tableOfContentsDict[eachTerm]
                     for eachTerm in allTags[eachTag]]))
             for eachTag in tagList]
-allH2 = tagListWithUrl + allH2
+allH2.insert(0, tagListWithUrl)
 allH2.insert(0, header)
 tagFileContent = "".join(allH2)
 with open("tags.md",'w') as f:
