@@ -73,3 +73,19 @@ see
 * [gg](https://github.com/Fmajor/gg)
 * [gitflow](https://github.com/nvie/gitflow)
 
+## good ds9 startup script
+* tags: ds9, bash
+
+#### by [Fmajor](https://github.com/someone/Fmajor)
+* auto load regions that has the same name (and .reg extension) as the fits file
+* start with multiframe mode
+
+```bash
+#!/bin/bash
+export XPA_METHOD=local
+if [[ -f `echo ${@%.fits}.reg` ]]; then
+	./ds9 -multiframe -lock frame image -zscale -linear -cmap gray -region shape projection $@ -region load all ${@%.fits}.reg&
+else
+	./ds9 -multiframe -lock frame image -zscale -linear -cmap gray -region shape projection $@&
+fi
+```
