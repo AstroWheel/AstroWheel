@@ -82,15 +82,12 @@ see
 * auto load regions that has the same name (and .reg extension) as the fits file
 * start with multiframe mode
 
-Move your ds9 to ds9.bin and ds9.zip to ds9.bin.zip
-
 ```bash
 #!/bin/bash
 export XPA_METHOD=local
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 if [[ -f `echo ${@%.fits}.reg` ]]; then
-	$DIR/ds9.bin -multiframe -lock frame image -zscale -linear -cmap gray -region shape projection $@ -region load all ${@%.fits}.reg&
+	./ds9 -multiframe -lock frame image -zscale -linear -cmap gray -region shape projection $@ -region load all ${@%.fits}.reg&
 else
-	$DIR/ds9.bin -multiframe -lock frame image -zscale -linear -cmap gray -region shape projection $@&
+	./ds9 -multiframe -lock frame image -zscale -linear -cmap gray -region shape projection $@&
 fi
 ```
