@@ -89,6 +89,7 @@ save the code to ds9 in the same folder as ds9.bin and chmod +x
 ```bash
 #!/bin/bash
 export XPA_METHOD=local
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 if [[ -f `echo ${@%.fits}.reg` ]]; then
 	./ds9 -multiframe -lock frame image -zscale -linear -cmap gray -region shape projection $@ -region load all ${@%.fits}.reg&
 else
