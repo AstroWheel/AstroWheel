@@ -80,6 +80,9 @@ see
 * auto load regions that has the same name (and .reg extension) as the fits file
 * start with multiframe mode
 
+mv your ds9 to ds9.bin and ds9.zip to ds9.bin.zip
+save the code to ds9 in the same folder as ds9.bin and chmod +x
+
 ```bash
 #!/bin/bash
 export XPA_METHOD=local
