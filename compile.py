@@ -9,9 +9,9 @@ try:
     import mistune
     from lxml import etree
 except ImportError as e:
-    raise Exception("you need to install markdown package!")
+    raise Exception("you need to install mistune and lxml package!")
 
-filename = "./README.md"
+filename = "./posts.md"
 
 with open(filename,'r') as f:
     readme = f.read().decode("utf-8")
