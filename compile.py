@@ -1,4 +1,5 @@
 from __future__ import (absolute_import, division, print_function, unicode_literals)
+import sys
 
 """
 auto generate the table of contents for README.md and tag list in the tag.md
@@ -12,6 +13,12 @@ except ImportError as e:
     raise Exception("you need to install mistune and lxml package!")
 
 filename = "./_posts.md"
+
+print("\n\nMake sure that you are editing _post.md instead of README.md, all your changes in README.md will be lost.\n\thit ENTER to contimue, Ctrl+c to excape.")
+if sys.version_info[0]==2:
+    temp=raw_input("")
+else:
+    temp=input("")
 
 with open(filename,'r') as f:
     readme = f.read().decode("utf-8")
